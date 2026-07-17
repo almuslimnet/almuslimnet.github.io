@@ -1,0 +1,3 @@
+User-agent: *
+Host: almuslim.net
+Sitemap: https://almuslim.net/sitemap.txt

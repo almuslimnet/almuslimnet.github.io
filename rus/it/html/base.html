@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Про HTML тег BASE: Назначение и примеры</title>
+<meta name="description" content="HTML тег BASE: Назначение и примеры. Зачем нужен тег BASE. Синтаксис и атрибуты. Практические примеры">
+<base href="https://almuslim.net/rus/it/html/" target="_blank">
+</head>
+<body style="max-width:50em;margin:auto;">
+<p>С именем Аллаха Милостивого.</p>
+<main>
+<article>
+<h1 style="text-align:center;">HTML тег &lt;base&gt;: Назначение и примеры</h1>
+
+<p>Тег <strong>&lt;base&gt;</strong> — это специальный элемент, который задает базовый URL (адрес) для всех относительных ссылок на странице.</p>
+ 
+<hr>
+
+<h2>Зачем нужен тег BASE</h2>
+
+<p>Обычно используют относительные пути в ссылках (например, <code>href="base.html"</code> или <code>src="images/html.png"</code>). Браузер понимает, что эти файлы лежат в той же папке, что и текущая страница или в указанном подкаталоге относительно каталога текущей страницы.
+</p>
+<p>
+<small>Слова папка и каталог я использую как синонимы. И хвала Аллаху!</small>
+</p>
+    
+<p>Тег <strong>&lt;base&gt;</strong> позволяет изменить это поведение. Он полезен вы хотите, чтобы все относительные ссылки на странице вели на определённый домен и/или определённую папку, но при этом не желаете писать длинные абсолютные адреса в каждой ссылке.
+</p>
+
+<p>Тогда такие относительные ссылки останутся рабочими даже если переместить файл в другой каталог или даже на другой сайт на другом домене.
+</p>
+
+<p>Так же тег <strong>&lt;base&gt;</strong> позволяет открывать все ссылки в новом окне. Это дожно происходить если у него атрибут <code>target="_blank"</code>.
+</p>
+    
+<p>
+Тег <code>base</code> с атрибутом <code>href="https://almuslim.net/rus/it/html/"</code> говорит браузеру: "Все относительные ссылки на этой странице начинаются с адреса https://almuslim.net/rus/it/html/". Это чтобы каждый раз не писать https://almuslim.net/rus/html/ , а писать положение относительно каталога html в папке it в каталоге rus на сайте almuslim.net доступного по протоколу https.
+</p>
+
+<hr>
+
+<h2>Синтаксис</h2>
+<p>Тег является одиночным (не имеет закрывающего тега) и должен находиться внутри секции <strong>&lt;head&gt;</strong>. На странице может быть только <strong>один</strong> тег &lt;base&gt;.</p>
+
+<pre>
+&lt;base href="https://almuslim.net/rus/it/html/" target="_blank"&gt;
+</pre>
+
+<h3>Атрибуты:</h3>
+<ul>
+<li><strong>href</strong> (обязательный) — абсолютный URL, который будет использоваться как основа для всех относительных ссылок.</li>
+<li><strong>target</strong> (необязательный) — имя окна или фрейма, в котором будут открываться все ссылки по умолчанию (например, <code>_blank</code> для новой вкладки).</li>
+</ul>
+
+<hr>
+
+<h2>Практические примеры</h2>
+
+<h3>Пример 1: Изменение пути для ссылок</h3>
+<p>Представьте, что у нас в <code>&lt;head&gt;</code> стоит:</p>
+<pre>&lt;base href="https://almuslim.net/rus/it/html"&gt;</pre>
+
+<p>А в теле страницы мы пишем обычную короткую ссылку:</p>
+<pre>&lt;a href="base.html"&gt;Перейти к статье про HTML&lt;/a&gt;</pre>
+
+<p>Браузер автоматически склеит базовый адрес и относительную ссылку. И реальный адрес перехода будет уже на: <code>https://almuslim.net/rus/it/html/base.html</code>.</p>
+
+<p><strong>Результат работы на этой странице:</strong></p>
+<p><a href="base.html">Нажмите сюда, чтобы перейти к статье про HTML тег BASE</a> 
+<br>
+(ссылка ведет на https://almuslim.net/rus/it/html/base.html, хотя в коде написано просто "base.html").</p>
+
+
+<h3>Пример 2: Открытие всех ссылок в новом окне</h3>
+<p>Если в теге base указан атрибут <code>target="_blank"</code>, вам не нужно прописывать его для каждой ссылки отдельно.</p>
+
+<p>Код ссылки:</p>
+<pre>&lt;a href="base.html"&gt;Статья про HTML тег BASE&lt;/a&gt;</pre>
+
+<p><strong>Результат:</strong> Ссылка откроется в новой вкладке, даже если вы не писали <code>target="_blank"</code> в самом теге <code>&lt;a&gt;</code>.</p>
+<p><a href="base.html">Нажми сюда (откроется в новой вкладке)</a></p>
+
+
+<h3>Пример 3: Влияние на картинки и формы</h3>
+<p>Тег <strong>&lt;base&gt;</strong> влияет не только на ссылки <code>&lt;a&gt;</code>, но и на подключение ресурсов.</p>
+<p>Если у вас тег BASE указывает на <code>https://almuslim.net/rus/it/html/</code>, то код картинки:</p>
+<pre>&lt;img src="images/html.png"&gt;</pre>
+<p>Будет искать файл по адресу <code>https://almuslim.net/rus/it/html/images/html.png</code>.</p>
+<hr>
+<h2>Замечания</h2>
+<ol>
+<li>Тег <code>&lt;base&gt;</code> должен быть одним из <strong>первых</strong> элементов внутри <code>&lt;head&gt;</code> (после <code>&lt;meta&gt;</code> и <code>&lt;title&gt;</code>), чтобы браузер правильно обработал все последующие ссылки.</li>
+<li>При использовании абсолютных путей в ссылках (например, <code>href="https://almuslim.net/fajr/ahmar.htm"</code>), тег <code>&lt;base&gt;</code> на них <strong>не влияет</strong>.</li>
+</ol>
+</article>
+
+<hr>
+
+<aside>
+<h3>Ссылки по теме</h3>
+<a href="index.html">Краткая справка по всем HTML тегам</a>
+</aside>
+
+</main>
+<hr>
+<p style="text-align:center;">
+<small>И вся хвала Аллаху Господу всех миров!
+<br><a href="https://almuslim.net/rus/">Мусульманин</a>
+<br>&copy; 2026
+</small>
+</p>
+
+</body>
+</html>

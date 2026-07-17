@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ширина элемента</title>
+<style>
+ * {
+   box-sizing: border-box;
+ }
+ .container {
+   max-width: 800px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+ }
+ @media (max-width: 480px) {
+   .container {
+     padding-left: 10px;
+     padding-right: 10px;
+   }
+ }
+h1, h3, strong {font-family:sans-serif;}
+code {color:#933;padding:0px;margin:0px;}
+pre {padding:0px;margin:0px;}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Ширина элемента</h1>
+<p>
+<strong>
+На веб-странице нужны поля справа и слева от текста, но из-за них на мобильных устройствах концы строк уходят за край экрана. Как это избежать посредством HTML и CSS?
+</strong>
+</p>
+
+<h2>Первое и главное</h2>
+
+<h3>Используйте box-sizing: border-box</h3>
+<p>
+По умолчанию ширина элемента не включает padding и border, из-за чего ширина блока становится больше, чем указано в width. Чтобы padding учитывался внутри ширины, добавьте:
+<pre><code>* {
+  box-sizing: border-box;
+}
+</code></pre>
+<p>
+Это позволит задать, например, width: 100% и иметь padding внутри этой ширины.
+</p>
+
+<h2>Связанные вещи</h2>
+<h3>Сделайте адаптивные отступы через padding и max-width</h3>
+<pre><code>.container {
+  max-width: 600px; /* максимальная ширина для больших экранов */
+  margin: 0 auto;   /* центрируем блок */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+</code></pre>
+<p>
+Такой подход даст отступы слева и справа, но блок не выйдет за пределы экрана.
+</p>
+
+<h3>Используйте медиазапросы для уменьшения отступов на мобильных</h3>
+<pre><code>@media (max-width: 480px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+</code></pre>
+<p>
+Или вообще убрать поля на очень узких экранах.
+</p>
+
+<h3>Используйте <code>width:100%;</code> и внутренние отступы</h3>
+<p>
+Например:
+</p>
+<pre><code>.text-block {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+</code></pre>
+<p>
+Это позволит блоку занимать всю ширину родителя, а padding создаст внутренние поля, не выходящие за экран.
+</p>
+
+<h3>Проверьте мета-тег viewport в HTML</h3>
+<p>
+Очень важно иметь в head:
+<br>
+<code>
+meta name="viewport" content="width=device-width, initial-scale=1"
+</code>
+<br>
+Без этого мобильные браузеры могут масштабировать страницу неправильно.
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Cвободное ПО. Команды apt в Linux. TouchPad в Debian.</title>
+<meta name="description" content="Информационные технологии. Cвободное програмное обеспечение. Команды apt в Linux. Как настроить в щелчёк касанием Тачпада TouchPad в Debian.">
+
+<style type="text/css">
+body {background-color:#f0d0b0;font-size:1.2em;font-family:sans-serif;line-height:1.3em;}
+a {text-decoration:none; color:#007;}
+article, header {width:95%; max-width:1200px; min-width:320px; margin:auto; border:dotted 1px black; padding: 0.3em 1em 0.3em 1em; margin-top:1em; background-color:#f8e8c8;}
+img {max-width:100%}
+article a {border-bottom:dotted 2px #000000; color:#009;}
+.startend {text-align:center;font-size:150%;font-family:Tahoma;color:#700;}
+h1 {text-align:center; color:#800; text-shadow: 1px 1px 1px; font-size:185%;}
+h2 {text-align:center; color:#700;}
+ul { line-height:1.8em;}
+code {font-size:1.3em;}
+.center {text-align:center;}
+</style>
+</head>
+<body>
+<header>
+<h1>Мусульманин</h1>
+<h2>Информационные технологии</h2>
+</header>
+
+<article>
+<p class="startend" lang="ar">بسم الله الرحمن الرحيم</p>
+<h2>Cвободное програмное обеспечение</h2>
+
+<p>Хвала Аллаху, Он милостив. Всех благ не сосчитать. 
+Из современных милостей Всевышнего к людям техника, компьютеры, 
+смартфоны и планшеты, международная сеть интернет и свободное програмное обеспечение.</p>
+
+<p>Можно бесплатно скачать, установить и пользоваться операционной системой <a href="debian.htm" target="_blank">GNU Linux Debian</a>, 
+набором офисных программ <a href="https://ru.libreoffice.org/" target="_blank">LibreOffice</a>, средой разработки и написания кода NetBeans и многими другими программами.
+</p>
+<p>Аллах щедр и заботится о нуждах всех. Он привёл людей к этому. Хвала Ему, Щедрому, Милостивому!</p>
+<p>См. также: </p>
+
+<ul>
+<li>
+<a href="debian.htm">Мир Debian GNU Linux</a>
+</li><li>
+<a href="about-gnu-gpl.htm">О лицензии GNU GPL</a>, 
+</li><li>
+<a href="nano.htm">Справка редактора GNU nano</a>, 
+</li><li>
+<a href="#kak">Как выключить компьютер с операционной системой Debian из Bash.</a>
+</li><li>
+<a href="#vsc">Установка и русификация Visual Studio Code в Debian.</a>
+</li>
+</ul>
+
+<p><small>11 рамадана 1444 года.</small></p>
+</article>
+
+<article>
+<h2>Использование apt в Linux Debian</h2>
+<p>
+<strong>apt</strong> - это менеджер пакетов для командной строки свободной операционной системы GNU Linux <a href="https://www.debian.org/" target="_blank">Debian</a>. Он предоставляет возможность искать и управлять пакетами, устанавливать и удалять их.
+</p><p>
+Вначале в командной стоке BASH после слова apt вводят параметры, а потом команду.
+</p><p>
+Необходимо находиться в режиме суперпользователя.
+</p>
+<p>Например, чтобы установить <strong>git</strong> я напечатал: 
+<pre><code>apt install git</code></pre>
+в терминале и нажал клавишу <kbd>Enter</kbd>.
+<p>
+Основные <strong>команды apt</strong> и их значения:
+</p>
+<ul>
+<li>update - обновляет список доступных пакетов
+</li><li>install - устанавливает новые пакеты
+</li><li>search - ищет в описаниях пакетов
+</li><li>show - показывает дополнительные данные о пакете
+</li><li>reinstall - переустанавливает пакеты
+</li><li>remove - удаление пакетов
+</li><li>autoremove - автоматическое удаление всех неиспользуемых пакетов
+</li><li>list - показывает список пакетов на основе указанных имён
+</li><li>upgrade - обновляет систему устанавливая и обновляя пакеты
+</li><li>full-upgrade - обновляет систему удаляя, устанавливая или обновляя пакеты
+</li><li>edit-sources - редактирует файл с источниками пакетов
+</li>
+</ul>
+<p><small>Добавлено 7-e января 2025 года, во вторник, в ночь, что перед днём.</small></p>
+</article>
+
+<article>
+<h2>Не работает щелчок касанием Тачпада (TouchPad) в Debian.</h2>
+<h3>Решено</h3>
+<p>Вначале установите:</p>
+<p><b>
+apt install xserver-xorg-input-synaptics xserver-xorg-input-multitouch
+</b></p>
+<p>Потом перегрузите компьютер.</p>
+<p>Затем зайдите в меню приложений и отметьте в новой появившейся вкладке Тачпад то, что вам надо.</p>
+<a href="images/touchpad-in-debian.png">
+<img src="images/touchpad-in-debian.png" alt="Настройка тачпада TouchPad в Debian 10 XFCE">
+</a>
+<p>Из всех решений это было самое быстрое. И было реализовано в Debian GNU/Linux 10 (buster) в окружении рабочего стола XFCE 4.12.</p>
+<p>А чтобы узнать название и версию операционной системы и ядра можно использовать команду <code>hostnamectl</code> .</p>
+<!-- <p style="text-align:right;"><i></i></p> -->
+<p><small>20 сентября 2022 года, вторник</small></p>
+</article>
+
+<article>
+<h2>Публикация в интернете</h2>
+<p>Уже лет двадцать размещаю свои небольшие материалы в интернете на страницах своих различных сайтов. 
+Хорошо любительски, но не отлично знаю HTML, CSS и немного ознакомлен с серверными технологиями.</p>
+<h3>Это добротный хостинг</h3>
+<p>Уже много лет пользуюсь различными услугами <a href="https://beget.com/p2249291" target="_blank">ООО «Бегет»</a>, 
+такими как хостинг, регистрация доменов и недавно стал арендовать виртуальный сервер. 
+До этого и параллельно этому пользовался и сейчас немного пользуюсь другими хостингами. 
+Но на Бегете нравится больше, в том числе поэтому и <a href="https://beget.com/p2249291" target="_blank">рекомендую</a>.
+</p>
+<p><small>27 ноября 2024 года, среда</small></p>
+</article>
+
+<article id="kak">
+<p class="startend" lang="ar">بسم الله الرحمن الرحيم</p>
+<p>Во имя Аллаха Милостивого.</p>
+<h2>Как выключить компьютер с операционной системой Debian из Bash</h2>
+<p>
+Для выключения компьютера с операционной системой Debian выполните следующую команду с правами администратора:
+</p>
+<pre>
+    <code>systemctl poweroff</code>
+</pre>
+<p>
+Эта команда запускает процесс завершения работы системы, останавливает все запущенные сервисы и отключает питание компьютера.
+</p>
+<p>
+Другими способами описанными в инструкциях у меня не получалось.
+</p>
+<p><small>Написано поздно вечером 30 сентября 2025 года. (<a href="http://ramadan.date/english/index.htm" target="_blank">рабиуль-ахир</a> 1447 года от хиджры)</small></p>
+</article>
+
+<article id="vsc">
+<p class="startend" lang="ar">بسم الله الرحمن الرحيم</p>
+<p>Во имя Аллаха Милостивого.</p>
+<h2>Установка и русификация Visual Studio Code в Debian</h2>
+<h3> в 2024 году</h3>
+<p>Скачиваем с официального сайта Visual Studio Code файл для операционной системы 
+    <a href="https://debian.org/" title="Свободная бесплатная с открытыми исходными кодами" target="_blank">GNU Linux Debian</a>  
+    с расшитением .deb .</p>
+<p>Запускаем Терминал и переходим в режим суперпользователя с помощью команды <code>su</code> .</p>
+<p>Переходим в папку <b>Загрузки</b> с помощью команды <code>cd</code> .</p>
+<p>Выводим содержимое папки с помощью команды <code>ls</code> .</p>
+<img src="images/apt-install-vs-code.png" alt="apt install ./code*.deb">
+<p>Выводим содержимое папки с помощью команды <code>apt install ./code*.deb</code> , где звёздочка обозначает
+     любое продолжение названия файла, чтобы не писать полностью длинное имя файла, например 
+     <code>code_1.86.1-1707298119_amd64.deb</code>.</p>
+<p>Запускается процесс установки после которого появляется новый пункт в меню приложений 
+    <b>Разработка - Visual Studio Code</b> .</p>
+<img src="images/vs-code-in-menu.png" alt="Приложения - Разработка - Visual Studio Code">
+<p>Для русификации находим расширение <b>Russian Language Pack for Visual Studio Code</b> от компании 
+Microsoft и нажимаем кнопку <b>Install</b>.</p>
+<img src="images/vs-code-rus-lang.png">
+<p>Затем в сплывающем окошке нажимаем <b>Change Language and Restart</b>, 
+    что означает "Сменить язык и перезагрузить" программу.</p>
+<img src="images/vs-code-rus-lang-restart.png">
+<p>В результате программа после её перезагрузки будет русифицирована.</p>
+<img src="images/vs-code-rus-rezultat.png">
+<p>Программа Visual Studio Code довольно удобная и довольно шустрая даже на компьютерах 15-летней давности.</p>
+<p>И вся хвала и слава Аллаху Хозяину всех миров!</p>
+<p><small>Написано 12 февраля 2024 года, понедельник, а через месяц уже наступит 
+    <a href="http://ramadan.date/russian/index.htm" target="_blank">рамадан</a>.</small></p>
+</article>
+
+<p style="text-align:center;">© <small> <a href="https://almuslim.net/rus/">Мусульманин</a> 2026, (thepages.ru 2022-2025)</small></p>
+</body>
+</html>
+

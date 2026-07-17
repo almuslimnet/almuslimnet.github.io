@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Справка редактора GNU nano</title>
+<meta name="description" content="Справка редактора GNU nano. Комбинации клавиш. Командные сочетания клавиш в nano">
+<meta name="keywords" content="справка, редактор, nano, GNU, комбинации, клавиши">
+<style type="text/css">
+body {font-family:sans-serif;}
+div {max-width:960px; min-width:320px; margin:auto;}
+.center {text-align:center;}
+kbd {font-size:1.3em;font-weight:bold;}
+pre {font-size:1.2em;}
+span.key {color:#009999;}  
+</style>
+</head>
+<body>
+<div>
+<p dir="rtl" lang="ar">بسم الله الرحمن الرحيم</p>
+<p>Это для удобства скопированная, немного отформатированная и подредактированная справка по nano. Nano это популярный консольный редактор текстов в операционных системах основанных на Linux, таких как <a href="https://www.debian.org/" target="_blank">Debian</a> например.</p>
+<p>Много подробностей про GNU nano на английском языке по этой ссылке: <a href="https://www.nano-editor.org/docs.php" target="_blank">Documentation</a></p>
+<h1 class="center">Справка редактора GNU nano</h1>
+<p>Редактор <strong>nano</strong> разработан для эмуляции функциональности и простоты использования оригинального редактора UW Pico. 
+</p>
+<p>
+Текстовый консольный редактор nano разделён на четыре основные части: 
+</p>
+
+<ul>
+<li>
+Верхняя строка содержит
+<ul>
+<li>
+версию программы,
+</li><li>
+текущее имя  файла, который редактируется,
+</li><li>
+и были ли внесены изменения в текущий файл.
+</li>
+</ul>
+</li>
+<li>
+Вторая часть — это главное окно редактирования, в котором отображается редактируемый файл.
+</li><li>
+Строка состояния — это 3 строка снизу; она показывает разные важные сообщения.
+</li><li>
+Две нижние строки показывают самые часто используемые сочетания клавиш редактора nano.
+</li>
+</ul>
+
+<p>
+Сочетания записываются так: последовательности с кнопкой <kbd>Control</kbd> указаны  с префиксом «^» и могут быть введены либо с зажатой клавишей <kbd>Ctrl</kbd> или после двойного нажатия на <kbd>Esc</kbd>.
+</p>
+<p>
+Последовательности с кнопкой Meta указаны  с префиксом «M-» и могут быть введены используя любую из кнопок: <kbd>Alt</kbd>, <kbd>Cmd</kbd> или <kbd>Esc</kbd>, в зависимости от вашей раскладки клавиатуры.
+</p>
+<p>
+Нажатие <kbd>Esc</kbd> дважды, затем ввод трёхзначного числа от <kbd>000</kbd> до <kbd>255</kbd> вставит символ с  соответствующим кодом.
+</p>
+
+
+<h2>Таблица командных сочетаний клавиш nano</h2>
+<p>
+Следующие комбинации клавиш доступны в главном  окне редактора. Их альтернативные сочитания указаны в скобках:
+</p>
+<pre>
+<span class="key">^G</span>     (<span class="key">F1</span>)      Показать эту справку
+<span class="key">^X</span>     (<span class="key">F2</span>)      Закрыть текущий буфер / Выйти из nano
+<span class="key">^O</span>     (<span class="key">F3</span>)      Записать текущий буфер (или отмеченную область) на диск
+<span class="key">^R</span>     (<span class="key">Ins</span>)     Вставить другой файл в текущий (или в новый) буфер
+
+<span class="key">^W</span>     (<span class="key">F6</span>)      Поиск строки или регулярного выражения
+<span class="key">^\</span>     (<span class="key">M-R</span>)     Заменить текст или регулярное выражение</pre>
+
+<pre><span class="key">^W</span>     (<span class="key">F6</span>)      Поиск строки или регулярного выражения
+<span class="key">^\</span>     (<span class="key">M-R</span>)     Заменить текст или регулярное выражение
+<span class="key">^K</span>     (<span class="key">F9</span>)      Вырезать текущую строку (или отмеченную область) в буфер обмена
+<span class="key">^U</span>     (<span class="key">F10</span>)     Вставить содержимое буфера обмена в текущей позиции курсора
+
+<span class="key">^T</span>               Выполнить функцию или внешнюю команду
+<span class="key">^J</span>     (<span class="key">F4</span>)      Выровнять текущий абзац
+
+<span class="key">^C</span>     (<span class="key">F11</span>)     Показать положение курсора
+<span class="key">^/</span>     (<span class="key">M-G</span>)     Перейти на указанный номер строки и столбца
+
+<span class="key">M-U</span>              Отменить последнее действие
+<span class="key">M-E</span>              Повторить последнее отменённое действие
+
+<span class="key">M-A</span>    (<span class="key">^6</span>)      Отметить текст от текущей позиции курсора
+<span class="key">M-6</span>    (<span class="key">M-^</span>)     Копировать текущую строку (или отмеченную область) в буфер обмена
+
+<span class="key">M-]</span>              На соответствующую скобку
+
+<span class="key">^Q</span>               Обратный поиск строки или регулярного выражения
+<span class="key">M-Q</span>              Искать следующее совпадение
+<span class="key">M-W</span>              Искать предыдущее совпадение
+
+<span class="key">^B</span>     (<span class="key">◂</span>)       Назад на один символ
+<span class="key">^F</span>     (<span class="key">▸</span>)       Вперёд на один символ
+<span class="key">^◂</span>     (<span class="key">M-Space</span>) Назад на одно слово
+</pre>
+
+<pre><span class="key">^F</span>     (<span class="key">▸</span>)       Вперёд на один символ
+<span class="key">^◂</span>     (<span class="key">M-Space</span>) Назад на одно слово
+<span class="key">^▸</span>     (<span class="key">^Space</span>)  Вперёд на одно слово
+<span class="key">^A</span>     (<span class="key">Home</span>)    На начало текущей строки
+<span class="key">^E</span>     (<span class="key">End</span>)     В конец текущей строки
+
+<span class="key">^P</span>     (<span class="key">▴</span>)       На предыдущую строку
+<span class="key">^N</span>     (<span class="key">▾</span>)       На следующую строку
+<span class="key">M-▴</span>    (<span class="key">M--</span>)     Прокрутить одну строку вверх, не перемещая курсор
+<span class="key">M-▾</span>    (<span class="key">M-+</span>)     Прокрутить одну строку вниз, не перемещая курсор
+
+<span class="key">^▴</span>     (<span class="key">M-7</span>)     Перейти к предыдущему блоку текста
+<span class="key">^▾</span>     (<span class="key">M-8</span>)     Перейти к следующему блоку текста
+<span class="key">M-(</span>    (<span class="key">M-9</span>)     На начало текущего абзаца; потом следующего абзаца
+<span class="key">M-)</span>    (<span class="key">M-0</span>)     В конец текущего абзаца; потом следующего абзаца
+
+<span class="key">^Y</span>     (<span class="key">PgUp</span>)    Перейти на экран вверх
+<span class="key">^V</span>     (<span class="key">PgDn</span>)    Перейти на экран вниз
+<span class="key">M-\</span>    (<span class="key">^Home</span>)   На первую строку файла
+<span class="key">M-/</span>    (<span class="key">^End</span>)    На последнюю строку файла
+
+<span class="key">M-◂</span>    (<span class="key">M-,</span>)     Перейти в предыдущий буфер
+<span class="key">M-▸</span>    (<span class="key">M-.</span>)     Перейти в следующий буфер
+
+<span class="key">^I</span>     (<span class="key">Tab</span>)     Insert a tab at the cursor position (or indent marked lines)
+<span class="key">^M</span>     (<span class="key">Enter</span>)   Вставить строку в позиции курсора
+</pre>
+
+<pre><span class="key">^I</span>     (<span class="key">Tab</span>)     Insert a tab at the cursor position (or indent marked lines)
+<span class="key">^M</span>     (<span class="key">Enter</span>)   Вставить строку в позиции курсора
+
+<span class="key">^H</span>     (<span class="key">Bsp</span>)     Удалить символ слева от курсора
+<span class="key">^D</span>     (<span class="key">Del</span>)     Удалить символ под курсором
+
+<span class="key">M-Bsp</span>  (<span class="key">Sh-^Del</span>) Удалить в обратном направлении от позиции курсора до начала слова
+<span class="key">^Del</span>             Удалить от позиции курсора до начала слова
+<span class="key">M-T</span>              Вырезать от позиции курсора до конца файла
+
+<span class="key">M-J</span>              Выровнять по ширине текущий абзац
+<span class="key">M-D</span>              Подсчитать количество строк, слов и символов
+<span class="key">M-V</span>              Вставить следующую комбинацию клавиш как есть
+
+<span class="key">M-}</span>              Увеличить отступ текущей строки (или отмеченной области)
+<span class="key">M-{</span>    (<span class="key">Sh-Tab</span>)  Уменьшить отступ текущей строки (или отмеченной области)
+
+<span class="key">M-3</span>              За/раскомментировать текущую строку (или отмеченные строки)
+<span class="key">^]</span>               Дополнить текущее слово
+
+<span class="key">M-:</span>              Начать/остановить запись макроса
+<span class="key">M-;</span>              Выполнить последний записанный макрос
+
+<span class="key">M-Del</span>            Удалить текущую строку (или отмеченную область)
+
+<span class="key">M-Ins</span>            Установить или удалить закладку на текущей строке
+</pre>
+
+<pre><span class="key">M-Ins</span>            Установить или удалить закладку на текущей строке
+<span class="key">M-PgUp</span>           Перейти на предыдущую ближайшую закладку
+<span class="key">M-PgDn</span>           Перейти на следующую ближайшую закладку
+
+<span class="key">F12</span>              Проверить орфографию, если доступно
+<span class="key">M-B</span>              Проверить синтаксис кода, если доступно
+<span class="key">M-F</span>              Выполнить программу, чтобы отформатировать или выполнить другие манипуляции с буфером
+
+<span class="key">^L</span>               Обновить текущий экран
+<span class="key">^L</span>               Центрировать строку на которой находится курсор
+
+<span class="key">^S</span>               Сохранить файл без подтверждения
+
+<span class="key">M-Z</span>              Hidden interface разрешить/запретить
+<span class="key">M-X</span>              Режим справки разрешить/запретить
+<span class="key">M-C</span>              Отображение постоянного положения курсора разрешить/запретить
+<span class="key">M-S</span>              Мягкий перенос длинных строк разрешить/запретить
+<span class="key">M-N</span>              Нумерация строк разрешить/запретить
+<span class="key">M-P</span>              Отображение пробелов разрешить/запретить
+<span class="key">M-Y</span>              Подсветка синтаксиса разрешить/запретить
+
+<span class="key">M-H</span>              Умная клавиша HOME разрешить/запретить
+<span class="key">M-I</span>              Автоотступы разрешить/запретить
+<span class="key">M-K</span>              Вырезать до конца разрешить/запретить
+</pre>
+
+<pre><span class="key">M-PgDn</span>           Перейти на следующую ближайшую закладку
+
+<span class="key">F12</span>              Проверить орфографию, если доступно
+<span class="key">M-B</span>              Проверить синтаксис кода, если доступно
+<span class="key">M-F</span>              Выполнить программу, чтобы отформатировать или выполнить другие манипуляции с буфером
+
+<span class="key">^L</span>               Обновить текущий экран
+<span class="key">^L</span>               Центрировать строку на которой находится курсор
+
+<span class="key">^S</span>               Сохранить файл без подтверждения
+
+<span class="key">M-Z</span>              Hidden interface разрешить/запретить
+<span class="key">M-X</span>              Режим справки разрешить/запретить
+<span class="key">M-C</span>              Отображение постоянного положения курсора разрешить/запретить
+<span class="key">M-S</span>              Мягкий перенос длинных строк разрешить/запретить
+<span class="key">M-N</span>              Нумерация строк разрешить/запретить
+<span class="key">M-P</span>              Отображение пробелов разрешить/запретить
+<span class="key">M-Y</span>              Подсветка синтаксиса разрешить/запретить
+
+<span class="key">M-H</span>              Умная клавиша HOME разрешить/запретить
+<span class="key">M-I</span>              Автоотступы разрешить/запретить
+<span class="key">M-K</span>              Вырезать до конца разрешить/запретить
+<span class="key">M-L</span>              Жесткий перенос длинных строк разрешить/запретить
+<span class="key">M-O</span>              Конвертация табуляций в пробелы разрешить/запретить
+<span class="key">M-M</span>              Поддержка мыши разрешить/запретить
+</pre>
+<p>
+Операционная система <a href="https://www.debian.org/" target="_blank">Debian</a> основана на Linux и GNU, а также другом свободном с открытыми исходными кодами и свободно распространяемом програмном обеспечении.
+</p>
+<p class="center"><a href="https://almuslim.net/rus/it/">На главную страницу</a></p>
+</div>
+</body>
+</html>

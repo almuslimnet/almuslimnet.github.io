@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Справочник HTML тегов</title>
+<base href="https://almuslim.net/rus/it/html/" target="_blank">
+</head>
+<body style="max-width:50em;margin:auto;">
+<p>С именем Аллаха Милостивого.</p>
+<main>
+<article>
+<h1 style="text-align:center;">Справочник HTML тегов</h1>
+<p>Это краткая справка по тегам HTML5.</p>
+
+<h2>Содержание</h2>
+<ul>
+<li><a href="#structure">Структура документа</a></li>
+<li><a href="#text">Текстовые теги</a></li>
+<li><a href="#formatting">Форматирование текста</a></li>
+<li><a href="#links">Ссылки и навигация</a></li>
+<li><a href="#lists">Списки</a></li>
+<li><a href="#tables">Таблицы</a></li>
+<li><a href="#forms">Формы</a></li>
+<li><a href="#media">Медиа и изображения</a></li>
+<li><a href="#semantic">Семантические теги</a></li>
+<li><a href="#meta">Мета-теги и информация</a></li>
+<li><a href="#other">Другие теги</a></li>
+</ul>
+
+<hr>
+
+<h2 id="structure">Структура документа</h2>
+
+<h3>&lt;!DOCTYPE&gt;</h3>
+<p><strong>Описание:</strong> Объявляет тип документа HTML5</p>
+<p><strong>Пример:</strong> &lt;!DOCTYPE html&gt;</p>
+
+<h3>&lt;html&gt;</h3>
+<p><strong>Описание:</strong> Корневой элемент HTML-документа</p>
+<p><strong>Пример:</strong> &lt;html lang="ru"&gt;...&lt;/html&gt;</p>
+
+<h3>&lt;head&gt;</h3>
+<p><strong>Описание:</strong> Контейнер для метаданных документа</p>
+<p><strong>Пример:</strong> &lt;head&gt;...&lt;/head&gt;</p>
+
+<h3>&lt;body&gt;</h3>
+<p><strong>Описание:</strong> Содержимое документа, видимое пользователю</p>
+<p><strong>Пример:</strong> &lt;body&gt;...&lt;/body&gt;</p>
+
+<h3>&lt;title&gt;</h3>
+<p><strong>Описание:</strong> Заголовок страницы (отображается во вкладке браузера)</p>
+<p><strong>Пример:</strong> &lt;title&gt;Моя страница&lt;/title&gt;</p>
+
+<h3><a href="base.html">&lt;base&gt;</a></h3>
+<p><strong>Описание:</strong> Базовый URL для всех относительных ссылок</p>
+<p><strong>Пример 1:</strong> &lt;base href="https://almuslim.net/rus/it/html/"  target="_blank"&gt;</p>
+<p><strong>Пример 2:</strong> &lt;base href="https://almuslim.net/"&gt;</p>
+<p><a href="base.html"><strong>См. подробное описание и примеры</strong></a></p>
+<hr>
+
+<h2 id="text">Текстовые теги</h2>
+
+<h3>&lt;h1&gt; - &lt;h6&gt;</h3>
+<p><strong>Описание:</strong> Заголовки разных уровней (h1 - самый важный, h6 - наименее важный)</p>
+<p><strong>Пример:</strong> &lt;h1&gt;Главный заголовок&lt;/h1&gt;</p>
+
+<h3>&lt;p&gt;</h3>
+<p><strong>Описание:</strong> Параграф текста</p>
+<p><strong>Пример:</strong> &lt;p&gt;Это абзац текста&lt;/p&gt;</p>
+
+<h3>&lt;br&gt;</h3>
+<p><strong>Описание:</strong> Перенос строки</p>
+<p><strong>Пример:</strong> Текст&lt;br&gt;Новая строка</p>
+
+<h3>&lt;hr&gt;</h3>
+<p><strong>Описание:</strong> Горизонтальная разделительная линия</p>
+<p><strong>Пример:</strong> &lt;hr&gt;</p>
+
+<h3>&lt;pre&gt;</h3>
+<p><strong>Описание:</strong> Предварительно отформатированный текст (сохраняет пробелы и переносы)</p>
+<p><strong>Пример:</strong> &lt;pre&gt;  Текст с пробелами&lt;/pre&gt;</p>
+
+<h3>&lt;blockquote&gt;</h3>
+<p><strong>Описание:</strong> Длинная цитата</p>
+<p><strong>Пример:</strong> &lt;blockquote&gt;Цитата&lt;/blockquote&gt;</p>
+
+<h3>&lt;q&gt;</h3>
+<p><strong>Описание:</strong> Короткая цитата (автоматически добавляет кавычки)</p>
+<p><strong>Пример:</strong> &lt;q&gt;Короткая цитата&lt;/q&gt;</p>
+
+<h3>&lt;cite&gt;</h3>
+<p><strong>Описание:</strong> Название произведения (книги, фильма и т.д.)</p>
+<p><strong>Пример:</strong> &lt;cite&gt;Война и мир&lt;/cite&gt;</p>
+
+<h3>&lt;code&gt;</h3>
+<p><strong>Описание:</strong> Фрагмент компьютерного кода</p>
+<p><strong>Пример:</strong> &lt;code&gt;print("Hello")&lt;/code&gt;</p>
+
+<h3>&lt;kbd&gt;</h3>
+<p><strong>Описание:</strong> Клавиатурный ввод</p>
+<p><strong>Пример:</strong> Нажмите &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;</p>
+
+<h3>&lt;samp&gt;</h3>
+<p><strong>Описание:</strong> Пример вывода программы</p>
+<p><strong>Пример:</strong> &lt;samp&gt;Ошибка 404&lt;/samp&gt;</p>
+
+<h3>&lt;var&gt;</h3>
+<p><strong>Описание:</strong> Переменная в математическом выражении или коде</p>
+<p><strong>Пример:</strong> &lt;var&gt;x&lt;/var&gt; + &lt;var&gt;y&lt;/var&gt; = 10</p>
+
+<h3>&lt;abbr&gt;</h3>
+<p><strong>Описание:</strong> Аббревиатура</p>
+<p><strong>Пример:</strong> &lt;abbr title="Гипертекстовый язык разметки"&gt;HTML&lt;/abbr&gt;</p>
+
+<h3>&lt;address&gt;</h3>
+<p><strong>Описание:</strong> Контактная информация автора документа</p>
+<p><strong>Пример:</strong> &lt;address&gt;Email: test@example.com&lt;/address&gt;</p>
+
+<h3>&lt;time&gt;</h3>
+<p><strong>Описание:</strong> Дата и время</p>
+<p><strong>Пример:</strong> &lt;time datetime="2024-01-01"&gt;1 января 2024&lt;/time&gt;</p>
+
+<h3>&lt;mark&gt;</h3>
+<p><strong>Описание:</strong> Выделенный текст (маркер)</p>
+<p><strong>Пример:</strong> &lt;mark&gt;Выделенный текст&lt;/mark&gt;</p>
+
+<h3>&lt;small&gt;</h3>
+<p><strong>Описание:</strong> Текст меньшего размера (обычно для примечаний)</p>
+<p><strong>Пример:</strong> &lt;small&gt;Мелкий текст&lt;/small&gt;</p>
+
+<h3>&lt;sub&gt;</h3>
+<p><strong>Описание:</strong> Подстрочный текст</p>
+<p><strong>Пример:</strong> H&lt;sub&gt;2&lt;/sub&gt;O</p>
+
+<h3>&lt;sup&gt;</h3>
+<p><strong>Описание:</strong> Надстрочный текст</p>
+<p><strong>Пример:</strong> 10&lt;sup&gt;2&lt;/sup&gt;</p>
+
+<hr>
+
+<h2 id="formatting">Форматирование текста</h2>
+
+<h3>&lt;b&gt;</h3>
+<p><strong>Описание:</strong> Жирный текст (без семантического значения)</p>
+<p><strong>Пример:</strong> &lt;b&gt;Жирный текст&lt;/b&gt;</p>
+
+<h3>&lt;strong&gt;</h3>
+<p><strong>Описание:</strong> Важный текст (жирный, с семантическим значением)</p>
+<p><strong>Пример:</strong> &lt;strong&gt;Важный текст&lt;/strong&gt;</p>
+
+<h3>&lt;i&gt;</h3>
+<p><strong>Описание:</strong> Курсив (без семантического значения)</p>
+<p><strong>Пример:</strong> &lt;i&gt;Курсив&lt;/i&gt;</p>
+
+<h3>&lt;em&gt;</h3>
+<p><strong>Описание:</strong> Выделенный текст (курсив, с семантическим значением)</p>
+<p><strong>Пример:</strong> &lt;em&gt;Акцент&lt;/em&gt;</p>
+
+<h3>&lt;u&gt;</h3>
+<p><strong>Описание:</strong> Подчёркнутый текст</p>
+<p><strong>Пример:</strong> &lt;u&gt;Подчёркнутый&lt;/u&gt;</p>
+
+<h3>&lt;s&gt;</h3>
+<p><strong>Описание:</strong> Зачёркнутый текст (устаревшее/неактуальное)</p>
+<p><strong>Пример:</strong> &lt;s&gt;Старая цена&lt;/s&gt;</p>
+
+<h3>&lt;del&gt;</h3>
+<p><strong>Описание:</strong> Удалённый текст</p>
+<p><strong>Пример:</strong> &lt;del&gt;Удалено&lt;/del&gt;</p>
+
+<h3>&lt;ins&gt;</h3>
+<p><strong>Описание:</strong> Вставленный текст</p>
+<p><strong>Пример:</strong> &lt;ins&gt;Добавлено&lt;/ins&gt;</p>
+
+<hr>
+
+<h2 id="links">Ссылки и навигация</h2>
+
+<h3>&lt;a&gt;</h3>
+<p><strong>Описание:</strong> Гиперссылка</p>
+<p><strong>Пример:</strong> &lt;a href="https://example.com"&gt;Ссылка&lt;/a&gt;</p>
+<p><strong>Атрибуты:</strong> href, target, rel, download, title</p>
+
+<h3>&lt;nav&gt;</h3>
+<p><strong>Описание:</strong> Навигационный блок</p>
+<p><strong>Пример:</strong> &lt;nav&gt;...меню...&lt;/nav&gt;</p>
+
+<h3>&lt;link&gt;</h3>
+<p><strong>Описание:</strong> Связь с внешними ресурсами (обычно CSS)</p>
+<p><strong>Пример:</strong> &lt;link rel="stylesheet" href="style.css"&gt;</p>
+
+<h3>&lt;meta&gt;</h3>
+<p><strong>Описание:</strong> Метаданные документа</p>
+<p><strong>Пример:</strong> &lt;meta charset="UTF-8"&gt;</p>
+
+<hr>
+
+<h2 id="lists">Списки</h2>
+
+<h3>&lt;ul&gt;</h3>
+<p><strong>Описание:</strong> Маркированный список</p>
+<p><strong>Пример:</strong></p>
+<pre>
+&lt;ul&gt;
+&lt;li&gt;Элемент 1&lt;/li&gt;
+&lt;li&gt;Элемент 2&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<h3>&lt;ol&gt;</h3>
+<p><strong>Описание:</strong> Нумерованный список</p>
+<p><strong>Пример:</strong></p>
+<pre>
+&lt;ol&gt;
+&lt;li&gt;Первый&lt;/li&gt;
+&lt;li&gt;Второй&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+<h3>&lt;li&gt;</h3>
+<p><strong>Описание:</strong> Элемент списка</p>
+<p><strong>Пример:</strong> &lt;li&gt;Элемент&lt;/li&gt;</p>
+
+<h3>&lt;dl&gt;</h3>
+<p><strong>Описание:</strong> Список определений</p>
+<p><strong>Пример:</strong> &lt;dl&gt;...&lt;/dl&gt;</p>
+
+<h3>&lt;dt&gt;</h3>
+<p><strong>Описание:</strong> Термин в списке определений</p>
+<p><strong>Пример:</strong> &lt;dt&gt;HTML&lt;/dt&gt;</p>
+
+<h3>&lt;dd&gt;</h3>
+<p><strong>Описание:</strong> Описание термина в списке определений</p>
+<p><strong>Пример:</strong> &lt;dd&gt;Язык разметки&lt;/dd&gt;</p>
+
+<hr>
+
+<h2 id="tables">Таблицы</h2>
+
+<h3>&lt;table&gt;</h3>
+<p><strong>Описание:</strong> Таблица</p>
+<p><strong>Пример:</strong> &lt;table&gt;...&lt;/table&gt;</p>
+
+<h3>&lt;tr&gt;</h3>
+<p><strong>Описание:</strong> Строка таблицы</p>
+<p><strong>Пример:</strong> &lt;tr&gt;...&lt;/tr&gt;</p>
+
+<h3>&lt;td&gt;</h3>
+<p><strong>Описание:</strong> Ячейка таблицы</p>
+<p><strong>Пример:</strong> &lt;td&gt;Данные&lt;/td&gt;</p>
+
+<h3>&lt;th&gt;</h3>
+<p><strong>Описание:</strong> Заголовочная ячейка таблицы</p>
+<p><strong>Пример:</strong> &lt;th&gt;Заголовок&lt;/th&gt;</p>
+
+<h3>&lt;thead&gt;</h3>
+<p><strong>Описание:</strong> Шапка таблицы</p>
+<p><strong>Пример:</strong> &lt;thead&gt;...&lt;/thead&gt;</p>
+
+<h3>&lt;tbody&gt;</h3>
+<p><strong>Описание:</strong> Тело таблицы</p>
+<p><strong>Пример:</strong> &lt;tbody&gt;...&lt;/tbody&gt;</p>
+
+<h3>&lt;tfoot&gt;</h3>
+<p><strong>Описание:</strong> Подвал таблицы</p>
+<p><strong>Пример:</strong> &lt;tfoot&gt;...&lt;/tfoot&gt;</p>
+
+<h3>&lt;caption&gt;</h3>
+<p><strong>Описание:</strong> Заголовок таблицы</p>
+<p><strong>Пример:</strong> &lt;caption&gt;Название таблицы&lt;/caption&gt;</p>
+
+<h3>&lt;colgroup&gt;</h3>
+<p><strong>Описание:</strong> Группа колонок</p>
+<p><strong>Пример:</strong> &lt;colgroup&gt;...&lt;/colgroup&gt;</p>
+
+<h3>&lt;col&gt;</h3>
+<p><strong>Описание:</strong> Колонка таблицы</p>
+<p><strong>Пример:</strong> &lt;col&gt;</p>
+
+<hr>
+
+<h2 id="forms">Формы</h2>
+
+<h3>&lt;form&gt;</h3>
+<p><strong>Описание:</strong> Форма для ввода данных</p>
+<p><strong>Пример:</strong> &lt;form action="/submit" method="post"&gt;...&lt;/form&gt;</p>
+
+<h3>&lt;input&gt;</h3>
+<p><strong>Описание:</strong> Поле ввода</p>
+<p><strong>Пример:</strong> &lt;input type="text" name="name"&gt;</p>
+<p><strong>Типы:</strong> text, password, email, number, date, checkbox, radio, submit, reset, file, hidden</p>
+
+<h3>&lt;textarea&gt;</h3>
+<p><strong>Описание:</strong> Многострочное текстовое поле</p>
+<p><strong>Пример:</strong> &lt;textarea name="message"&gt;&lt;/textarea&gt;</p>
+
+<h3>&lt;button&gt;</h3>
+<p><strong>Описание:</strong> Кнопка</p>
+<p><strong>Пример:</strong> &lt;button type="submit"&gt;Отправить&lt;/button&gt;</p>
+
+<h3>&lt;select&gt;</h3>
+<p><strong>Описание:</strong> Выпадающий список</p>
+<p><strong>Пример:</strong> &lt;select name="city"&gt;...&lt;/select&gt;</p>
+
+<h3>&lt;option&gt;</h3>
+<p><strong>Описание:</strong> Элемент выпадающего списка</p>
+<p><strong>Пример:</strong> &lt;option value="1"&gt;Москва&lt;/option&gt;</p>
+
+<h3>&lt;optgroup&gt;</h3>
+<p><strong>Описание:</strong> Группа элементов в выпадающем списке</p>
+<p><strong>Пример:</strong> &lt;optgroup label="Города"&gt;...&lt;/optgroup&gt;</p>
+
+<h3>&lt;label&gt;</h3>
+<p><strong>Описание:</strong> Метка для элемента формы</p>
+<p><strong>Пример:</strong> &lt;label for="email"&gt;Email:&lt;/label&gt;</p>
+
+<h3>&lt;fieldset&gt;</h3>
+<p><strong>Описание:</strong> Группа элементов формы</p>
+<p><strong>Пример:</strong> &lt;fieldset&gt;...&lt;/fieldset&gt;</p>
+
+<h3>&lt;legend&gt;</h3>
+<p><strong>Описание:</strong> Заголовок для fieldset</p>
+<p><strong>Пример:</strong> &lt;legend&gt;Контактная информация&lt;/legend&gt;</p>
+
+<h3>&lt;output&gt;</h3>
+<p><strong>Описание:</strong> Результат вычислений</p>
+<p><strong>Пример:</strong> &lt;output name="result"&gt;&lt;/output&gt;</p>
+
+<h3>&lt;datalist&gt;</h3>
+<p><strong>Описание:</strong> Список предустановленных вариантов для input</p>
+<p><strong>Пример:</strong> &lt;datalist id="colors"&gt;...&lt;/datalist&gt;</p>
+
+<h3>&lt;progress&gt;</h3>
+<p><strong>Описание:</strong> Индикатор прогресса</p>
+<p><strong>Пример:</strong> &lt;progress value="70" max="100"&gt;&lt;/progress&gt;</p>
+
+<h3>&lt;meter&gt;</h3>
+<p><strong>Описание:</strong> Измеритель (шкала)</p>
+<p><strong>Пример:</strong> &lt;meter value="0.6"&gt;60%&lt;/meter&gt;</p>
+
+<hr>
+
+<h2 id="media">Медиа и изображения</h2>
+
+<h3>&lt;img&gt;</h3>
+<p><strong>Описание:</strong> Изображение</p>
+<p><strong>Пример:</strong> &lt;img src="photo.jpg" alt="Описание"&gt;</p>
+
+<h3>&lt;audio&gt;</h3>
+<p><strong>Описание:</strong> Аудио</p>
+<p><strong>Пример:</strong> &lt;audio controls&gt;&lt;source src="sound.mp3"&gt;&lt;/audio&gt;</p>
+
+<h3>&lt;video&gt;</h3>
+<p><strong>Описание:</strong> Видео</p>
+<p><strong>Пример:</strong> &lt;video controls&gt;&lt;source src="video.mp4"&gt;&lt;/video&gt;</p>
+
+<h3>&lt;source&gt;</h3>
+<p><strong>Описание:</strong> Источник медиа (для audio/video)</p>
+<p><strong>Пример:</strong> &lt;source src="file.mp3" type="audio/mpeg"&gt;</p>
+
+<h3>&lt;track&gt;</h3>
+<p><strong>Описание:</strong> Субтитры для видео</p>
+<p><strong>Пример:</strong> &lt;track src="subs.vtt" kind="subtitles"&gt;</p>
+
+<h3>&lt;canvas&gt;</h3>
+<p><strong>Описание:</strong> Холст для рисования (требует JavaScript)</p>
+<p><strong>Пример:</strong> &lt;canvas id="myCanvas"&gt;&lt;/canvas&gt;</p>
+
+<h3>&lt;svg&gt;</h3>
+<p><strong>Описание:</strong> Векторная графика</p>
+<p><strong>Пример:</strong> &lt;svg&gt;...&lt;/svg&gt;</p>
+
+<h3>&lt;figure&gt;</h3>
+<p><strong>Описание:</strong> Контейнер для медиа с подписью</p>
+<p><strong>Пример:</strong> &lt;figure&gt;&lt;img src="..."&gt;&lt;/figure&gt;</p>
+
+<h3>&lt;figcaption&gt;</h3>
+<p><strong>Описание:</strong> Подпись к figure</p>
+<p><strong>Пример:</strong> &lt;figcaption&gt;Описание изображения&lt;/figcaption&gt;</p>
+
+<h3>&lt;picture&gt;</h3>
+<p><strong>Описание:</strong> Контейнер для нескольких источников изображения</p>
+<p><strong>Пример:</strong> &lt;picture&gt;&lt;source ...&gt;&lt;img ...&gt;&lt;/picture&gt;</p>
+
+<h3>&lt;map&gt;</h3>
+<p><strong>Описание:</strong> Карта изображения (кликабельные области)</p>
+<p><strong>Пример:</strong> &lt;map name="map1"&gt;...&lt;/map&gt;</p>
+
+<h3>&lt;area&gt;</h3>
+<p><strong>Описание:</strong> Область на карте изображения</p>
+<p><strong>Пример:</strong> &lt;area shape="rect" coords="..." href="..."&gt;</p>
+
+<h3>&lt;embed&gt;</h3>
+<p><strong>Описание:</strong> Встроенный контент (плагины)</p>
+<p><strong>Пример:</strong> &lt;embed src="file.swf"&gt;</p>
+
+<h3>&lt;object&gt;</h3>
+<p><strong>Описание:</strong> Встроенный объект</p>
+<p><strong>Пример:</strong> &lt;object data="file.pdf"&gt;&lt;/object&gt;</p>
+
+<h3>&lt;param&gt;</h3>
+<p><strong>Описание:</strong> Параметр для object</p>
+<p><strong>Пример:</strong> &lt;param name="autoplay" value="true"&gt;</p>
+
+<h3>&lt;iframe&gt;</h3>
+<p><strong>Описание:</strong> Встроенный фрейм (другая страница)</p>
+<p><strong>Пример:</strong> &lt;iframe src="page.html"&gt;&lt;/iframe&gt;</p>
+
+<hr>
+
+<h2 id="semantic">Семантические теги</h2>
+
+<h3>&lt;header&gt;</h3>
+<p><strong>Описание:</strong> Шапка документа или раздела</p>
+<p><strong>Пример:</strong> &lt;header&gt;...&lt;/header&gt;</p>
+
+<h3>&lt;footer&gt;</h3>
+<p><strong>Описание:</strong> Подвал документа или раздела</p>
+<p><strong>Пример:</strong> &lt;footer&gt;...&lt;/footer&gt;</p>
+
+<h3>&lt;main&gt;</h3>
+<p><strong>Описание:</strong> Основное содержимое документа</p>
+<p><strong>Пример:</strong> &lt;main&gt;...&lt;/main&gt;</p>
+
+<h3>&lt;article&gt;</h3>
+<p><strong>Описание:</strong> Самостоятельная статья</p>
+<p><strong>Пример:</strong> &lt;article&gt;...&lt;/article&gt;</p>
+
+<h3>&lt;section&gt;</h3>
+<p><strong>Описание:</strong> Раздел документа</p>
+<p><strong>Пример:</strong> &lt;section&gt;...&lt;/section&gt;</p>
+
+<h3>&lt;aside&gt;</h3>
+<p><strong>Описание:</strong> Боковая панель (дополнительная информация)</p>
+<p><strong>Пример:</strong> &lt;aside&gt;...&lt;/aside&gt;</p>
+
+<h3>&lt;details&gt;</h3>
+<p><strong>Описание:</strong> Раскрывающийся блок</p>
+<p><strong>Пример:</strong> &lt;details&gt;&lt;summary&gt;Подробнее&lt;/summary&gt;...&lt;/details&gt;</p>
+
+<h3>&lt;summary&gt;</h3>
+<p><strong>Описание:</strong> Заголовок для details</p>
+<p><strong>Пример:</strong> &lt;summary&gt;Нажмите меня&lt;/summary&gt;</p>
+
+<h3>&lt;dialog&gt;</h3>
+<p><strong>Описание:</strong> Диалоговое окно</p>
+<p><strong>Пример:</strong> &lt;dialog open&gt;...&lt;/dialog&gt;</p>
+
+<h3>&lt;template&gt;</h3>
+<p><strong>Описание:</strong> Шаблон для клонирования (через JS)</p>
+<p><strong>Пример:</strong> &lt;template&gt;...&lt;/template&gt;</p>
+
+<h3>&lt;slot&gt;</h3>
+<p><strong>Описание:</strong> Плейсхолдер для веб-компонентов</p>
+<p><strong>Пример:</strong> &lt;slot&gt;&lt;/slot&gt;</p>
+
+<hr>
+
+<h2 id="meta">Мета-теги и информация</h2>
+
+<h3>&lt;meta charset&gt;</h3>
+<p><strong>Описание:</strong> Кодировка документа</p>
+<p><strong>Пример:</strong> &lt;meta charset="UTF-8"&gt;</p>
+
+<h3>&lt;meta viewport&gt;</h3>
+<p><strong>Описание:</strong> Настройки отображения на мобильных</p>
+<p><strong>Пример:</strong> &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+
+<h3>&lt;meta description&gt;</h3>
+<p><strong>Описание:</strong> Описание страницы для поисковиков</p>
+<p><strong>Пример:</strong> &lt;meta name="description" content="Описание"&gt;</p>
+
+<h3>&lt;meta keywords&gt;</h3>
+<p><strong>Описание:</strong> Ключевые слова (устарело)</p>
+<p><strong>Пример:</strong> &lt;meta name="keywords" content="html, css"&gt;</p>
+
+<h3>&lt;meta author&gt;</h3>
+<p><strong>Описание:</strong> Автор документа</p>
+<p><strong>Пример:</strong> &lt;meta name="author" content="Имя"&gt;</p>
+
+<h3>&lt;meta refresh&gt;</h3>
+<p><strong>Описание:</strong> Автообновление страницы</p>
+<p><strong>Пример:</strong> &lt;meta http-equiv="refresh" content="30"&gt;</p>
+
+<h3>&lt;style&gt;</h3>
+<p><strong>Описание:</strong> Встроенные стили CSS</p>
+<p><strong>Пример:</strong> &lt;style&gt;body { color: black; }&lt;/style&gt;</p>
+
+<h3>&lt;script&gt;</h3>
+<p><strong>Описание:</strong> Встроенный JavaScript</p>
+<p><strong>Пример:</strong> &lt;script&gt;console.log("Hello");&lt;/script&gt;</p>
+
+<h3>&lt;noscript&gt;</h3>
+<p><strong>Описание:</strong> Контент для браузеров без JS</p>
+<p><strong>Пример:</strong> &lt;noscript&gt;Включите JavaScript&lt;/noscript&gt;</p>
+
+<hr>
+
+<h2 id="other">Другие теги</h2>
+
+<h3>&lt;div&gt;</h3>
+<p><strong>Описание:</strong> Блочный контейнер</p>
+<p><strong>Пример:</strong> &lt;div&gt;...&lt;/div&gt;</p>
+
+<h3>&lt;span&gt;</h3>
+<p><strong>Описание:</strong> Строчный контейнер</p>
+<p><strong>Пример:</strong> &lt;span&gt;текст&lt;/span&gt;</p>
+
+<h3>&lt;bdi&gt;</h3>
+<p><strong>Описание:</strong> Изолированное направление текста</p>
+<p><strong>Пример:</strong> &lt;bdi dir="rtl"&gt;текст&lt;/bdi&gt;</p>
+
+<h3>&lt;bdo&gt;</h3>
+<p><strong>Описание:</strong> Переопределение направления текста</p>
+<p><strong>Пример:</strong> &lt;bdo dir="rtl"&gt;текст&lt;/bdo&gt;</p>
+
+<h3><a href="ruby.txt">&lt;ruby&gt;</a></h3>
+<p><strong>Описание:</strong> Руби-аннотация (для азиатских языков)</p>
+<p><strong>Пример:</strong> &lt;ruby&gt;漢&lt;rt&gt;kan&lt;/rt&gt;字&lt;/ruby&gt;</p>
+<p><a href="ruby.txt"><strong>См. подробное описание и примеры</strong></a></p>
+
+<h3>&lt;rt&gt;</h3>
+<p><strong>Описание:</strong> Расшифровка для ruby</p>
+<p><strong>Пример:</strong> &lt;rt&gt;произношение&lt;/rt&gt;</p>
+
+<h3>&lt;rp&gt;</h3>
+<p><strong>Описание:</strong> Резервные скобки для ruby</p>
+<p><strong>Пример:</strong> &lt;rp&gt;(&lt;/rp&gt;</p>
+
+<h3>&lt;wbr&gt;</h3>
+<p><strong>Описание:</strong> Возможность переноса слова</p>
+<p><strong>Пример:</strong> ОченьДлинноеСлово&lt;wbr&gt;Продолжение</p>
+
+<h3>&lt;data&gt;</h3>
+<p><strong>Описание:</strong> Машиночитаемое значение</p>
+<p><strong>Пример:</strong> &lt;data value="123"&gt;123 единицы&lt;/data&gt;</p>
+
+<h3>&lt;command&gt;</h3>
+<p><strong>Описание:</strong> Команда меню (устарел)</p>
+<p><strong>Пример:</strong> &lt;command label="Сохранить"&gt;</p>
+
+<h3>&lt;menu&gt;</h3>
+<p><strong>Описание:</strong> Меню команд</p>
+<p><strong>Пример:</strong> &lt;menu&gt;&lt;li&gt;Пункт&lt;/li&gt;&lt;/menu&gt;</p>
+
+<h3>&lt;menuitem&gt;</h3>
+<p><strong>Описание:</strong> Пункт меню</p>
+<p><strong>Пример:</strong> &lt;menuitem label="Новый"&gt;</p>
+
+<hr>
+
+<h2>Устаревшие теги (не рекомендуется использовать)</h2>
+
+<p>&lt;acronym&gt; - Аббревиатура (заменён на &lt;abbr&gt;)</p>
+<p>&lt;applet&gt; - Java-апплет (заменён на &lt;object&gt;)</p>
+<p>&lt;basefont&gt; - Базовый шрифт</p>
+<p>&lt;big&gt; - Большой текст (заменён на CSS)</p>
+<p>&lt;blink&gt; - Мигающий текст (не поддерживается)</p>
+<p>&lt;center&gt; - Центрирование (заменён на CSS)</p>
+<p>&lt;dir&gt; - Список каталогов (заменён на &lt;ul&gt;)</p>
+<p>&lt;font&gt; - Шрифт (заменён на CSS)</p>
+<p>&lt;frame&gt; - Фрейм (заменён на &lt;iframe&gt;)</p>
+<p>&lt;frameset&gt; - Набор фреймов</p>
+<p>&lt;marquee&gt; - Бегущая строка</p>
+<p>&lt;strike&gt; - Зачёркнутый текст (заменён на &lt;s&gt;)</p>
+<p>&lt;tt&gt; - Моноширинный текст (заменён на &lt;code&gt;)</p>
+<p>&lt;u&gt; - Подчёркнутый (теперь имеет семантику)</p>
+<p>&lt;xmp&gt; - Пример текста</p>
+
+<hr>
+
+<h2>Глобальные атрибуты (работают для всех тегов)</h2>
+
+<p><strong>class</strong> - Класс элемента для стилизации</p>
+<p><strong>id</strong> - Уникальный идентификатор</p>
+<p><strong>style</strong> - Встроенные стили</p>
+<p><strong>title</strong> - Всплывающая подсказка</p>
+<p><strong>lang</strong> - Язык содержимого</p>
+<p><strong>dir</strong> - Направление текста (ltr/rtl)</p>
+<p><strong>hidden</strong> - Скрыть элемент</p>
+<p><strong>tabindex</strong> - Порядок навигации Tab</p>
+<p><strong>contenteditable</strong> - Редактируемый контент</p>
+<p><strong>data-*</strong> - Пользовательские данные</p>
+<p><strong>draggable</strong> - Можно перетаскивать</p>
+<p><strong>spellcheck</strong> - Проверка орфографии</p>
+<p><strong>translate</strong> - Перевод содержимого</p>
+
+</article>
+<hr>
+
+<aside>
+<h3>Материалы по теме:</h3>
+<a href="history.html">Историческая таблица тегов HTML: Версии HTML: 2.0, 3.2, 4.01 и HTML 5.</a>
+</aside>
+
+</main>
+<hr>
+<p style="text-align:center;">
+<small>И вся хвала Аллаху Господу всех миров!
+<br><a href="https://almuslim.net/rus/">Мусульманин</a>
+<br>&copy; 2026
+</small>
+</p>
+</body>
+</html>
